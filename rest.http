@@ -1,0 +1,32 @@
+GET http://localhost:3000
+
+###
+POST http://localhost:3000/user/register
+Content-Type: application/json
+
+{
+    "email":"quynhanh21c@gmail.com",
+    "password":"whoareyou"
+}   
+
+###
+POST http://localhost:3000/user/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzYyOGY0N2M0ZmRlMTY3MDc1MzIxYzEiLCJpYXQiOjE2Njg2ODI2OTcsImV4cCI6MTcwMDI0MDI5N30.ZQI8S5BkJ--fDQwdVHO9v1JMXdJ7OkFV2dOnmIduSfw"
+}
+###
+POST http://localhost:3000/user/login
+Content-Type: application/json
+
+{
+    "email":"quynhanh21c@gmail.com",
+    "password":"whoareyou"
+}   
+###
+POST http://localhost:3000/user/logout
+
+###
+GET http://localhost:3000/user/getlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzYyOGY0N2M0ZmRlMTY3MDc1MzIxYzEiLCJpYXQiOjE2Njg2ODE5MDEsImV4cCI6MTY2ODY4MzcwMX0.e_mLxWuY28uYOP8N2qZiHcdWvwVkS_EA8Uufm71vd78
